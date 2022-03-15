@@ -1,0 +1,15 @@
+function [NUM_PROP] = Trigger(PROPERTY)
+NUM_MPORO = 9;
+NUM_MPERM = 10;
+NUM_NFPORO = 8;
+NUM_NFPERM = 10;
+if PROPERTY == "MPERM"
+    NUM_PROP = NUM_MPERM;
+elseif PROPERTY == "NFPERM"
+    NUM_PROP = NUM_NFPERM;
+elseif PROPERTY == "MPORO"
+    NUM_PROP = NUM_MPORO;
+elseif PROPERTY == "NFPORO"
+    NUM_PROP = NUM_NFPORO;
+end
+    

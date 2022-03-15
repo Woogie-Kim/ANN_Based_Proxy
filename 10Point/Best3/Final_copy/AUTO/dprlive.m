@@ -1,0 +1,13 @@
+%%
+q = xlsread('prod.xlsx');
+r = q(3:13,:);
+h = figure;
+boxplot(r,'Labels',{'200ft','300ft','400ft','500ft','600ft',...
+    '200ft','300ft','400ft','500ft','600ft',...
+    '200ft','300ft','400ft','500ft','600ft',...
+    '200ft','300ft','400ft','500ft','600ft',...
+    '200ft','300ft','400ft','500ft','600ft'})
+ax = gca;
+ax.FontSize = 20;
+ylabel('Cumulative Gas Production (MMscf)','FontSize', 24);
+
